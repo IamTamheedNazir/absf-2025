@@ -61,11 +61,17 @@ function disputeInference(uint256 requestId, bytes memory counterExample) extern
 
 ```plaintext
 absf-2025/
-├── contracts/              # 💼 Smart contract (OptimisticOracle)
-├── scripts/                # 🚀 Hardhat deployment scripts
-├── hardhat.config.js       # ⚙️ Network & compiler configuration
-├── .env                    # 🔐 Environment secrets (excluded from repo)
-├── README.md               # 📖 Project documentation
+├── absf-frontend/           # React frontend (Web3 dApp UI)
+│   └── src/
+├── contracts/               # Solidity smart contracts (OptimisticOracle.sol)
+├── scripts/                 # Hardhat deployment scripts
+├── artifacts/, build/, cache/ # Auto-generated from Hardhat
+├── .env                     # Environment variables (private)
+├── .gitignore               # Excludes .env, build artifacts, etc.
+├── hardhat.config.js        # Hardhat network & compiler config
+├── package.json             # Project dependencies
+├── requirements.txt         # Python requirements (for optional ML/backend)
+├── README.md                # Your now-stylish GitHub README
 ```
 ## 📊 **Use Cases**
 
